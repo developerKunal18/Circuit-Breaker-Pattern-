@@ -1,0 +1,10 @@
+Successful Request
+{
+    "message": "External service success"
+}
+
+Circuit Open
+{
+    "status": "Circuit OPEN",
+    "message": "Service temporarily unavailable"
+}
