@@ -1,0 +1,58 @@
+🧠 Why This Is Important
+
+Without a Circuit Breaker:
+Client
+   ↓
+Service A
+   ↓
+❌ Failed Service B
+   ↓
+Timeout
+   ↓
+More Requests
+   ↓
+System Overload
+
+With a Circuit Breaker:
+Client
+   ↓
+Service A
+   ↓
+Circuit Breaker
+   ↓
+❌ Failed Service B
+
+Circuit Opens
+↓
+Immediately Return Error
+(No More Requests)
+
+Benefits:
+	•	✅ Prevents cascading failures
+	•	✅ Improves system resilience
+	•	✅ Reduces unnecessary retries
+	•	✅ Allows failed services time to recover
+
+⸻
+
+Used By
+	•	Netflix Hystrix
+	•	Resilience4j
+	•	Istio
+	•	Spring Cloud
+
+⸻
+
+🛠 Tech Stack
+	•	Python
+	•	Flask
+	•	Time
+	•	Random
+
+⸻
+
+📂 Project Structure 
+circuit-breaker-service/
+│
+├── app.py
+└── README.md
